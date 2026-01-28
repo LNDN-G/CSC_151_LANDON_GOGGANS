@@ -6,6 +6,7 @@
 Note: This  program should reside in the directory path as follows->    CSC_151_LANDON_GOGGANS
 */
 
+package labs.example.hello;
 
 public class HelloWorld
 {
