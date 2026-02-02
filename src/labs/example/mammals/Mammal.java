@@ -61,4 +61,35 @@ public class Mammal
     {
         System.out.println("The mammal can reproduce.");
     }
+
+    //New Methods
+    public void getMammalDetails() 
+    {
+        System.out.println("Hair Color: " + hairColor);
+        System.out.println("Eye Color: " + eyeColor);
+        System.out.println("Body Temperature: " + bodyTemp);
+        System.out.println("Lifespan: " + Lifespan);
+        System.out.println("Weight: " + Weight);
+        System.out.println("Height: " + Height);
+    }
+
+    public void sit() 
+    {
+        System.out.println("The mammal is sitting");
+        try 
+        {
+            Thread.sleep(15000); //sit for 15 seconds
+        }
+        catch (InteruptionException e) 
+        {
+            System.out.println("The sitting was interrupted.");
+        }
+        stand();
+    }
+
+    public void stand() 
+    {
+        System.out.println("The mammal is standing.");
+        makeSound(); //Mammal Barks
+    }
 }
