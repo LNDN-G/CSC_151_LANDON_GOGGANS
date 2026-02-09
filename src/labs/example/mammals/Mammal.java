@@ -91,4 +91,24 @@ public class Mammal
     {
         System.out.println("The mammal is standing.");
     }
+
+    public int walk()
+    {
+        int south = 3;
+        int east = 4;
+
+        System.out.println("The mammal walks 3 miles south.");
+        System.out.println("The mammal turns right and walks 4 miles east.");
+
+        int distanceFromStart = (int) Math.sqrt((south * south) + (east * east));
+
+        System.out.println("The mammal is now " + distanceFromStart + " miles away from the starting point in a straight line.");
+
+        double thetaRadians = Math.atan2(southMiles, eastMiles);
+        double thetaDegrees = Math.toDegrees(thetaRadians);
+
+        System.out.println("The angle (theta) at the longest leg is " + thetaDegrees + " degrees.");
+
+        return distanceFromStart;
+    }
 }
