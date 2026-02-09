@@ -90,6 +90,5 @@ public class Mammal
     public void stand() 
     {
         System.out.println("The mammal is standing.");
-        makeSound(); //Mammal Barks
     }
 }
