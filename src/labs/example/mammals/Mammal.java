@@ -1,14 +1,14 @@
 /*
 @Author: Landon Goggans
 @Date: 2/1/2026
-@Purpose: To show off my mammal's properties
+@Purpose: To show off my mammal's properties and methods
 */
 
 package labs.example.mammal;
 
 public class Mammal
 {
-    //Properties
+    //Properties for my mammal
     private String hairColor;
     private String eyeColor;
     private double bodyTemp;
@@ -16,25 +16,25 @@ public class Mammal
     private double weight;
     private double height;
 
-    //Methods
+    //My mammal's methods
     public void run()
     {
-        System.out.println("The mammal can run.");
+        System.out.println("The mammal is running.");
     }
 
     public void eat()
     {
-        System.out.println("The mammal does eat.");
+        System.out.println("The mammal is eating.");
     }
 
     public void sleep()
     {
-        System.out.println("The mammal goes to sleep at night.");
+        System.out.println("The mammal is sleeping in its home.");
     }
 
     public void scratch()
     {
-        System.out.println("The mammal can scratch.");
+        System.out.println("The mammal scratched its prey.");
     }
 
     public void fight()
@@ -44,17 +44,17 @@ public class Mammal
 
     public void drink()
     {
-        System.out.println("The mammal can drink.");
+        System.out.println("The mammal is drinking water.");
     }
 
     public void breathe()
     {
-        System.out.println("The mammal does breathe.");
+        System.out.println("The mammal is out of breath.");
     }
 
     public void move()
     {
-        System.out.println("The mammal can move around.");
+        System.out.println("The mammal is moving toward its house.");
     }
 
     public void reproduce()

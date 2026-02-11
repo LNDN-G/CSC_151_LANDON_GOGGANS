@@ -11,5 +11,17 @@ public class Physics{
 
     final static double GRAVITY = 9.81;
 
+    public static double getDistance(double v, double t){
+        double x = v * t;
+        return x
+    }
+
+    public static double getLightSpeedInMPH(){
+        double lightSpeed = getSpeedOfLightInMPS() * 60 * 60;
+        return lightspeed
+    }
+
+
+
     
 }
