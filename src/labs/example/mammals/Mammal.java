@@ -4,7 +4,7 @@
 @Purpose: To show off my mammal's properties and methods
 */
 
-package labs.example.mammal;
+package labs.example.mammals;
 
 public class Mammal
 {
@@ -68,47 +68,29 @@ public class Mammal
         System.out.println("Hair Color: " + hairColor);
         System.out.println("Eye Color: " + eyeColor);
         System.out.println("Body Temperature: " + bodyTemp);
-        System.out.println("Lifespan: " + Lifespan);
-        System.out.println("Weight: " + Weight);
-        System.out.println("Height: " + Height);
+        System.out.println("Lifespan: " + lifespan);
+        System.out.println("Weight: " + weight);
+        System.out.println("Height: " + height);
     }
 
-    public void sit() 
+    //Sit method
+    public void sit() throws InterruptedException 
     {
         System.out.println("The mammal is sitting");
-        try 
-        {
-            Thread.sleep(15000); //sit for 15 seconds
-        }
-        catch (InteruptionException e) 
-        {
-            System.out.println("The sitting was interrupted.");
-        }
+        Thread.sleep(15000); //sit for 15 seconds
         stand();
     }
 
+    //Stand method
     public void stand() 
     {
-        System.out.println("The mammal is standing.");
+        System.out.println("The mammal is standing and roaring.");
     }
 
-    public int walk()
+    //Walk method
+    public double walk(double miles)
     {
-        int south = 3;
-        int east = 4;
-
-        System.out.println("The mammal walks 3 miles south.");
-        System.out.println("The mammal turns right and walks 4 miles east.");
-
-        int distanceFromStart = (int) Math.sqrt((south * south) + (east * east));
-
-        System.out.println("The mammal is now " + distanceFromStart + " miles away from the starting point in a straight line.");
-
-        double thetaRadians = Math.atan2(southMiles, eastMiles);
-        double thetaDegrees = Math.toDegrees(thetaRadians);
-
-        System.out.println("The angle (theta) at the longest leg is " + thetaDegrees + " degrees.");
-
-        return distanceFromStart;
+        System.out.println("The mammal walked " + miles + " miles.");
+        return miles;
     }
 }

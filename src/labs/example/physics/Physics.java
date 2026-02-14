@@ -16,12 +16,23 @@ public class Physics{
         return x
     }
 
-    public static double getLightSpeedInMPH(){
-        double lightSpeed = getSpeedOfLightInMPS() * 60 * 60;
-        return lightspeed
+    public static double getVelocity(double x, double t){
+        double v = x / t;
+        return v;
     }
 
+    public static double getMomentum(double m, double v){
+        double p = m * v;
+        return p;
+    }
 
+    public static double getForce(double m, double a){
+        double f = m * a;
+        return f;
+    }
 
-    
+    public static double getWork(double f, double d){
+        double w = f * d;
+        return w;
+    }
 }

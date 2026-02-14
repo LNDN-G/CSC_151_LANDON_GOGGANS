@@ -10,5 +10,10 @@ import java.text.DecimalFormat;
 
 public class Main
 {
-    
+    public static void main(String[] args)
+    {
+        Physics solve = new Physics();
+
+        System.out.println();
+    }
 }
