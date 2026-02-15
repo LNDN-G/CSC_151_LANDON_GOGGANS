@@ -11,27 +11,27 @@ public class Physics{
 
     final static double GRAVITY = 9.81;
 
-    public static double getDistance(double v, double t){
+    public double getDistance(double v, double t){
         double x = v * t;
-        return x
+        return x;
     }
 
-    public static double getVelocity(double x, double t){
+    public double getVelocity(double x, double t){
         double v = x / t;
         return v;
     }
 
-    public static double getMomentum(double m, double v){
+    public double getMomentum(double m, double v){
         double p = m * v;
         return p;
     }
 
-    public static double getForce(double m, double a){
+    public double getForce(double m, double a){
         double f = m * a;
         return f;
     }
 
-    public static double getWork(double f, double d){
+    public double getWork(double f, double d){
         double w = f * d;
         return w;
     }

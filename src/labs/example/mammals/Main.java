@@ -10,18 +10,23 @@ public class Main
 {
     public static void main(String[] args) throws InterruptedException
     {
-        Mammal mammalbasic = new Mammal("Brown", "Black", 101.5, 150.0, 3, false);
+        //Basic Mammals
+        Mammal mammalbasic = new Mammal("Black", "Brown", 101.5, 13, 79.0, 24.0, false);
 
+        //Mammal details, sit, and walk methods
         mammalbasic.getMammalDetails();
-        mammalbasic.sit();
-        mammalbasic.walk(3);
+        mammalbasic.sit(); //Mammal sits down
+        mammalbasic.walk(7); //Mammals walk 7 miles
         
         System.out.println();
         
-        Lion Mufasa = new Lion("Yellow", "Brown", 101.3, 420.0, 5, true);
-        
+        //Lion (inherits traits from the mammals and can roar)
+        Lion Mufasa = new Lion("Brown", "Amber", 101.3, 14, 420.0, 45.0, true);
+
+        //Lion details, sit, walk, and roar methods
         Mufasa.getMammalDetails();
-        Mufasa.sit();
-        Mufasa.walk(4);
+        Mufasa.sit(); //Lion sits down
+        Mufasa.roar(); //The lion roars out loud
+        Mufasa.walk(7); //Lion walks 7 miles
     }
 }

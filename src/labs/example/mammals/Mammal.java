@@ -62,7 +62,7 @@ public class Mammal
         System.out.println("The mammal can reproduce.");
     }
 
-    //New Methods
+    //Displays mammals details
     public void getMammalDetails() 
     {
         System.out.println("Hair Color: " + hairColor);
@@ -84,7 +84,7 @@ public class Mammal
     //Stand method
     public void stand() 
     {
-        System.out.println("The mammal is standing and roaring.");
+        System.out.println("The mammal is standing.");
     }
 
     //Walk method
@@ -92,5 +92,16 @@ public class Mammal
     {
         System.out.println("The mammal walked " + miles + " miles.");
         return miles;
+    }
+
+    //Consturctor for mammal
+    public Mammal(String hairColor, String eyeColor, double bodyTemp, int lifespan, double weight, double height, boolean canRoar)
+    {
+        this.hairColor = hairColor;
+        this.eyeColor = eyeColor;
+        this.bodyTemp = bodyTemp;
+        this.lifespan = lifespan;
+        this.weight = weight;
+        this.height = height;
     }
 }
