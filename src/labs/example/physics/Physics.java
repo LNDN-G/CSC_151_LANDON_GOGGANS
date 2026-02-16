@@ -35,4 +35,17 @@ public class Physics{
         double w = f * d;
         return w;
     }
+
+    public static double getTheta(int xVal,int yVal){
+        double theta = Math.atan2(xVal,yVal) * 180/3.1415;
+        return theta;
+    }
+
+    public double logInvalidAngleInfo(){
+        Sysyem.out.println("logging the angle xy degrees. This is not a right angle.");
+    }
+
+    public double logValidAngleInfo(){
+        System.out.println("logging the angle xy degrees. This is a valid 3-4-5 triangle.");
+    }
 }
