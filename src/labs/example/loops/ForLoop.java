@@ -25,8 +25,17 @@ public class ForLoop {
         }
     }
 
-        private int sumTwoNumbers(int num1, int num2) {
-            int sum = num1 + num2;
-            return sum;
+    private int sumTwoNumbers(int num1, int num2) {
+        int sum = num1 + num2;
+        return sum;
+    }
+
+    //New method
+    private int sumLoopCounter(int num) {
+        
+        for (int count = 10; count <= 10;) {
+            sum = num + count
+            System.out.println("The sum of the loop counter is: " + sum);
         }
+    }
 }
