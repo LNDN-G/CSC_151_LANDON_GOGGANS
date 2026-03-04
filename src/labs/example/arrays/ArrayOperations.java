@@ -7,24 +7,26 @@
 package labs.example.arrays;
 
 public class ArrayOperations{
-    public static void main(String[] args) {
-        //Assigns the integer 3 to ARREY
-        final int ARREY = 3;
-        int[] hours = new int[ARREY];
 
-        //Creates a copy of Type
-        Type keyboard = new Type(System.in);
-        System.out.println("Enter the hours counted by " + ARREY + "today.");
+    public void createNewArray(int size) {
 
-        for (int index = 0; index < ARREY; index++) {
-            System.out.println("Today " + (index + 1) + ": ");
-            hours[index] = keyboard.nextInt();
+        int[] newArray = new int[size];
+
+        for (int i = 0; i < newArray.length; i++) {
+            newArray[i] += i;
         }
 
-        System.out.println("The hours you entered are:");
+        System.out.println("I created a new array and it now has " + newArray.length + " items in it.");
 
+        System.out.println("The array items and their values are listed below:");
 
-        System.out.println("I created a new array and it now has X items in it.");
-        System.out.println("The array items aand their values are listed below: X");
+        displayArray(newArray);
+    }
+
+    private void displayArray(int[] array) {
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.println("Index " + i + " = " + array[i]);
+        }
     }
 }

@@ -10,7 +10,8 @@ public class Main
 {
     public static void main(String[] args)
     {
-        //Prints out HelloWorld string
-        System.out.print("HelloWorld!");
+        ArrayOperations arrayOps = new ArrayOperations();
+
+        arrayOps.createNewArray(10);
     }
 }
