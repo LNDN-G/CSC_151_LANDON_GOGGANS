@@ -29,4 +29,45 @@ public class ArrayOperations{
             System.out.println("Index " + i + " = " + array[i]);
         }
     }
+
+    public void sortArray(int[] array) {
+
+        int n = array.length;
+        int temp;
+
+        for (int i = 0; i < n - 1; i++) {
+
+            for (int j = 0; j < n - 1 - i; j++) {
+
+                if (array[j] > array[j + 1]) {
+
+                    temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+
+        System.out.println("The sorted array is:");
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i] + " ");
+        }
+    }
+
+    public void getDaysAndMonths() {
+
+        int[] days = {
+            31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
+        };
+
+        String[] months = {
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        };
+
+        for (int i = 0; i < months.length; i++) {
+            System.out.println("There are " + days[i] + " days in " + months[i]);
+        }
+    }
 }
